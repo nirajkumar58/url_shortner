@@ -63,13 +63,22 @@ This is a full-stack URL shortener application built with the MERN stack (MongoD
     ```
 
 4.  **Set up environment variables:**
-    Navigate to the `BACKEND` directory and create a `.env` file. Add the following variables:
+    Navigate to the `BACKEND` directory and create a `.env` file based on `.env.example`:
+
+    ```bash
+    cd BACKEND
+    cp .env.example .env
+    ```
+
+    Then edit the `.env` file and add your actual values:
 
     ```env
-    MONGO_URI=<your_mongodb_connection_string>
+    MONGO_URI=your_mongodb_atlas_connection_string
     APP_URL=http://localhost:3000
-    JWT_SECRET=<your_jwt_secret_key>
+    JWT_SECRET=your_secure_secret_key
     ```
+
+    **⚠️ IMPORTANT:** Never commit the `.env` file to version control. It contains sensitive credentials.
 
 ### Running the Application
 
