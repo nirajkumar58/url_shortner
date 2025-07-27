@@ -1,5 +1,10 @@
 import urlSchema from "../models/short_url.model.js";
 import { ConflictError } from "../utils/errorHandler.js";
+import mongoose from "mongoose";
+
+const isMongoConnected = () => {
+    return mongoose.connection.readyState === 1;
+};
 
 export const saveShortUrl = async (shortUrl, longUrl, userId) => {
     try{

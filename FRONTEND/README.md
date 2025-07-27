@@ -1,12 +1,52 @@
-# React + Vite
+# Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend for the URL Shortener application, built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   Modern, responsive UI for shortening URLs.
+-   User-friendly forms for signup and login.
+-   Dashboard to display a user's shortened URLs.
+-   "Copy to clipboard" functionality for shortened URLs.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+-   Node.js (v14 or higher)
+-   npm
+
+### Setup
+
+1.  Navigate to the `FRONTEND` directory:
+    ```bash
+    cd FRONTEND
+    ```
+
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+
+### Running the Development Server
+
+To start the Vite development server, run:
+
+```bash
+npm run dev
+```
+
+The frontend will be available at `http://localhost:5173` (or the next available port).
+
+The development server is configured to proxy API requests to the backend server running on `http://localhost:3000`.
+
+## Building for Production
+
+To create a production build of the frontend, run:
+
+```bash
+npm run build
+```
+
+The optimized static assets will be placed in the `dist` directory.
+
