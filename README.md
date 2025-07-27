@@ -3,6 +3,12 @@
 
 This is a full-stack URL shortener application built with the MERN stack (MongoDB, Express.js, React, Node.js). It allows users to shorten long URLs, and registered users can track their shortened URLs.
 
+## 🖼️ Application Preview
+
+![URL Shortener UI](assets/ui-screenshot.jpg)
+
+*Modern, responsive interface with gradient design and glass morphism effects*
+
 ## Features
 
 -   **Shorten URLs**: Anonymous users can quickly shorten long URLs.
@@ -33,6 +39,15 @@ This is a full-stack URL shortener application built with the MERN stack (MongoD
 
 -   [Concurrently](https://www.npmjs.com/package/concurrently) to run backend and frontend servers simultaneously.
 -   [Nodemon](https://nodemon.io/) for automatic server restarts during development.
+
+## 🎨 UI Features
+
+- **Modern Design**: Glass morphism effects with gradient backgrounds
+- **Responsive Layout**: Works seamlessly on desktop and mobile devices
+- **Interactive Elements**: Smooth animations and hover effects
+- **User Feedback**: Loading states, error messages, and success notifications
+- **Copy Functionality**: One-click copy to clipboard for shortened URLs
+- **Visual Indicators**: Real-time URL validation and status feedback
 
 ## Getting Started
 
