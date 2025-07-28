@@ -1,5 +1,5 @@
 import { cookieOptions } from "../config/config.js"
-import { loginUser, registerUser } from "../services/auth.service.js"
+import { loginUser, registerUser } from "../services/auth.services.js"
 import wrapAsync from "../utils/tryCatchWrapper.js"
 
 

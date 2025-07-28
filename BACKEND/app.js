@@ -16,7 +16,7 @@ dotenv.config("./.env")
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:5173', 
+    origin: '*', // Allow all origins for testing
     credentials: true 
 }));
 
@@ -25,6 +25,11 @@ app.use(express.urlencoded({extended:true}))
 app.use(cookieParser())
 
 app.use(attachUser)
+
+// Add a test route
+app.get("/api/test", (req, res) => {
+    res.json({ message: "Server is working!" });
+});
 
 app.use("/api/user",user_routes)
 app.use("/api/auth",auth_routes)
